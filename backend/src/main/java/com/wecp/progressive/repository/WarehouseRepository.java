@@ -6,5 +6,5 @@ import org.springframework.stereotype.Repository;
 import com.wecp.progressive.entity.Warehouse;
 
 @Repository
-public interface WarehouseRepository extends JpaRepository<Warehouse,Integer> {
+public interface WarehouseRepository extends JpaRepository<Warehouse, Integer>{
 }

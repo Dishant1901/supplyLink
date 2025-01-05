@@ -9,8 +9,8 @@ import javax.persistence.Id;
 public class Product  {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    int productId;
-    int warehouseId;
+    Integer productId;
+    Integer warehouseId;
     String productName;
     String productDescription;
     int quantity;

@@ -4,14 +4,15 @@ import java.util.List;
 
 import com.wecp.progressive.dao.ProductDAO;
 import com.wecp.progressive.entity.Product;
+import com.wecp.progressive.repository.ProductRepository;
 import com.wecp.progressive.service.ProductService;
 
 public class ProductServiceImplJpa implements ProductService  {
 
-    private ProductDAO productDAO;
+    private ProductRepository productRepository;
 
-    public ProductServiceImplJpa (ProductDAO productDAO) {
-        this.productDAO = productDAO;
+    public ProductServiceImplJpa (ProductRepository productRepository) {
+        this.productRepository = productRepository;
     }
    
     @Override
