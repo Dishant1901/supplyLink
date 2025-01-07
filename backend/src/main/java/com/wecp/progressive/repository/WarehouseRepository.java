@@ -12,11 +12,14 @@ import com.wecp.progressive.entity.Warehouse;
 @Repository
 public interface WarehouseRepository extends JpaRepository<Warehouse, Integer>{
 
-    Warehouse findByWarehouseId(@Param("warehouseId") int warehouseId);
+    // Warehouse findByWarehouseId(@Param("warehouseId") int warehouseId);
+    Warehouse findByWarehouseId(int warehouseId);
 
-    List<Warehouse> findAllBySupplier_SupplierId(@Param("supplierId") int supplierId);
+    // List<Warehouse> findAllBySupplier_SupplierId(@Param("supplierId") int supplierId);
+    List<Warehouse> findAllBySupplier_SupllierId(int supplierId);
 
-    @Query("DELETE FROM Warehouse w WHERE w.supplier.supplierId = :supplierId")
-    void deleteBySupplierId(@Param("supplierId") int supplierId);
+    // @Query("DELETE FROM Warehouse w WHERE w.supplier.supplierId = :supplierId")
+    // void deleteBySupplierId(@Param("supplierId") int supplierId);
+    void deleteBySupplierId(int supplierId);
 
 }
