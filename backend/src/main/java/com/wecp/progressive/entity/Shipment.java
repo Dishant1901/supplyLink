@@ -1,5 +1,7 @@
 package com.wecp.progressive.entity;
 
-public class Shipment {
+import javax.persistence.*;
+import java.util.Date;
 
+public class Shipment {
 }
