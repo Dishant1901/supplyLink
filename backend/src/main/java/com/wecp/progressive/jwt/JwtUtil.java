@@ -24,9 +24,9 @@ public class JwtUtil {
         this.supplierRepository = supplierRepository;
     }
 
-    private final String secret = "alpha";
+    private final String secret = "secretKey00000000";
 
-    private final int expiration = 100 * 60 * 60 * 10;
+    private final int expiration = 86400;
 
     public String generateToken(String username) {
         Date now = new Date();
